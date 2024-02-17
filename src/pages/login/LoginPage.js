@@ -7,7 +7,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const baseURL = 'http://localhost:8000'; // Specify your API base URL here
+  const baseURL = 'https://zavx-test-server.onrender.com'; // Specify your API base URL here
 
   const handleLogin = () => {
     // Make API call to login endpoint
