@@ -7,20 +7,34 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const baseURL = 'https://zavx-test-server.onrender.com'; // Specify your API base URL here
+  // const baseURL = 'https://zavx-test-server.onrender.com'; 
+  const baseURL = 'http://localhost:8000'; 
 
   const handleLogin = () => {
-    // Make API call to login endpoint
-    axios.post(`${baseURL}/login`, { username, password })
-      .then(response => {
-        // Successful login
-        alert('Login successful!');
-      })
-      .catch(error => {
-        // Failed login
-        setError('Invalid username or password');
-      });
+    const urlParams = new URLSearchParams(window.location.search);
+    const client_id = urlParams.get('client_id');
+    const redirect_uri = urlParams.get('redirect_uri');
+    const state = urlParams.get('state');
+  
+    axios.post(`${baseURL}/login/`, { username, password }, {
+      params: { client_id, redirect_uri, state },
+      validateStatus: function (status) {
+        return status >= 200 && status < 300; // Resolve promise for 2xx status codes
+      }
+    })
+    .then(response => {
+        if (response.status === 200) {
+          alert('Login successful!');
+          window.location.href = response.data.redirect;
+        } else {
+      }
+    })
+    .catch(error => {
+      // Handle errors
+      setError('Invalid username or password');
+    });
   };
+  
 
   return (
     <div className="container">
