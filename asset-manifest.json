@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/zavx/static/css/main.b465fde6.css",
-    "main.js": "/zavx/static/js/main.04addabf.js",
-    "static/js/592.dae48ac2.chunk.js": "/zavx/static/js/592.dae48ac2.chunk.js",
-    "static/media/logo.svg": "/zavx/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/zavx/index.html",
-    "main.b465fde6.css.map": "/zavx/static/css/main.b465fde6.css.map",
-    "main.04addabf.js.map": "/zavx/static/js/main.04addabf.js.map",
-    "592.dae48ac2.chunk.js.map": "/zavx/static/js/592.dae48ac2.chunk.js.map"
+    "main.css": "/zavx_login/static/css/main.b465fde6.css",
+    "main.js": "/zavx_login/static/js/main.909a1b58.js",
+    "static/js/592.dae48ac2.chunk.js": "/zavx_login/static/js/592.dae48ac2.chunk.js",
+    "static/media/logo.svg": "/zavx_login/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/zavx_login/index.html",
+    "main.b465fde6.css.map": "/zavx_login/static/css/main.b465fde6.css.map",
+    "main.909a1b58.js.map": "/zavx_login/static/js/main.909a1b58.js.map",
+    "592.dae48ac2.chunk.js.map": "/zavx_login/static/js/592.dae48ac2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b465fde6.css",
-    "static/js/main.04addabf.js"
+    "static/js/main.909a1b58.js"
   ]
 }
