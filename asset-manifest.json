@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/zavx/static/css/main.b465fde6.css",
+    "main.js": "/zavx/static/js/main.04addabf.js",
+    "static/js/592.dae48ac2.chunk.js": "/zavx/static/js/592.dae48ac2.chunk.js",
+    "static/media/logo.svg": "/zavx/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/zavx/index.html",
+    "main.b465fde6.css.map": "/zavx/static/css/main.b465fde6.css.map",
+    "main.04addabf.js.map": "/zavx/static/js/main.04addabf.js.map",
+    "592.dae48ac2.chunk.js.map": "/zavx/static/js/592.dae48ac2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b465fde6.css",
+    "static/js/main.04addabf.js"
+  ]
+}
