@@ -7,7 +7,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const baseURL = 'http://localhost:4000';
+  const baseURL = 'https://server.zavx.in';
   // const baseURL = 'http://localhost:8000'; 
 
   const handleLogin = () => {
