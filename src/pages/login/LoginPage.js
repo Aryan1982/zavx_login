@@ -3,11 +3,11 @@ import './LoginPage.css'; // Import the CSS file
 import axios from 'axios';
 
 const LoginPage = () => {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const baseURL = 'https://zavx-test-server.onrender.com'; 
+  const baseURL = 'http://localhost:4000';
   // const baseURL = 'http://localhost:8000'; 
 
   const handleLogin = () => {
@@ -16,7 +16,7 @@ const LoginPage = () => {
     const redirect_uri = urlParams.get('redirect_uri');
     const state = urlParams.get('state');
   
-    axios.post(`${baseURL}/login/`, { username, password }, {
+    axios.post(`${baseURL}/user/alexalogin/`, { email, password }, {
       params: { client_id, redirect_uri, state },
       validateStatus: function (status) {
         return status >= 200 && status < 300; // Resolve promise for 2xx status codes
@@ -45,8 +45,8 @@ const LoginPage = () => {
             {/* <label>Username:</label> */}
             <input
             type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder='Enter Email'
             />
         </div>
