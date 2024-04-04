@@ -25,7 +25,7 @@ const LoginPage = () => {
       .then(response => {
         if (response) {
           alert('Login successful!');
-          window.location.href = response.data.data.redirect;
+          // window.location.href = response.data.data.redirect;
         } else {
         }
       })
@@ -36,10 +36,10 @@ const LoginPage = () => {
 
 
   return (
-    <div className="container">
+    <div className="login-container ">
       <div className="overlay"></div>
-      <div className="form-container">
-        <h1>Log In</h1>
+      <div className="form-container text-center">
+        <h1 className='font-bold'>Log In</h1>
         <div className="form-group">
           {/* <label>Username:</label> */}
           <input
@@ -47,6 +47,7 @@ const LoginPage = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder='Enter Email'
+            className='w-full'
           />
         </div>
         <div className="form-group">
@@ -63,7 +64,7 @@ const LoginPage = () => {
         <p className='note'>( Note: Login with your account registered with Zavx )</p>
         <div className='footer'>
 
-          <h1 className='logo'>ZAVX</h1>
+          <h1 className='logo font-bold'>ZAVX</h1>
           <h2 className='tagline'>#aestheticizing technology</h2>
         </div>
       </div>
