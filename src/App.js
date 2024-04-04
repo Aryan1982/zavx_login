@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes> 
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<LoginPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           {/* Add more routes for other pages as needed */}
