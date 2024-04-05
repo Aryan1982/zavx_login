@@ -25,7 +25,7 @@ const LoginPage = () => {
       .then(response => {
         if (response) {
           alert('Login successful!');
-          // window.location.href = response.data.data.redirect;
+          window.location.href = response.data.data.redirect;
         } else {
         }
       })
